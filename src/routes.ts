@@ -1,6 +1,6 @@
 import { Router } from 'express'
 
-import uploadConfig from '../src/uploadConfig'
+import uploadConfig from './uploadConfig'
 
 import multer from 'multer'
 import postController from './postController'
