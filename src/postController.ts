@@ -46,7 +46,7 @@ async function registerPost(req: Request, res: Response) {
 async function getAll(req: Request, res: Response) {
   try {
     const data = await prisma.posts.findMany({
-     take: Number(3),
+     take: Number(2),
       // skip: 1,
 
       orderBy: {
