@@ -33,7 +33,7 @@ async function registerPost(req: Request, res: Response) {
         title: req.body.title,
         image: imagem,
         autor: req.body.autor,
-        text: req.body.title,
+        text: req.body.text,
       },
     })
 
