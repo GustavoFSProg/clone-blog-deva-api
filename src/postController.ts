@@ -60,4 +60,15 @@ async function getAll(req: Request, res: Response) {
   }
 }
 
-export default { registerPost, getAll }
+
+async function getSearch(req: Request, res: Response) {
+  try {
+    const data = await prisma.posts.findFirst({
+     where:{title: req.body.title},})
+
+    return res.status(200).send(data)
+  } catch (error) {
+    return res.status(400).send({ msg: 'ERROR!!', error })
+  }
+}
+export default { registerPost, getAll, getSearch }
