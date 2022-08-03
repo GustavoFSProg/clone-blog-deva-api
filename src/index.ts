@@ -10,7 +10,11 @@ const app = express()
 const { PORT } = process.env
 
 app.use(express.json())
-app.use(cors({ origin: ['https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/'] }))
+app.use(cors({
+  origin: [
+    'https://blog-deva.herokuapp.com/',
+    'https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/']
+}))
 app.use(route)
 
 // const allowedOrigins = ['http://localhost:3000'];
