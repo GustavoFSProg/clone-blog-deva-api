@@ -12,7 +12,7 @@ const { PORT } = process.env
 app.use(express.json())
 app.use(cors({
  origin: [
-    // 'https://blog-deva.herokuapp.com/',
+    'https://blog-deva.herokuapp.com/',
     'https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/',
   'https://www.netlify.com/',
   ]
