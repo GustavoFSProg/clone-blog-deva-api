@@ -28,9 +28,9 @@ app.use(function (req, res, next) {
 
 // const allowedOrigins = ['http://localhost:3000'];
 
-// const options: cors.CorsOptions = {
-//   origin: ['https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/']
-// };
+const options: cors.CorsOptions = {
+  origin: ['https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/']
+};
 
 app.get('/', function (req: Request, res: Response) {
   return res.status(200).send({ msg: ` 🍏 Api Running` })
