@@ -17,6 +17,7 @@ app.use(express.json())
 //   'https://www.netlify.com/',
 //   ]
 // }))
+app.use(cors())
 app.use(route)
 
 app.use(function (req, res, next) {
