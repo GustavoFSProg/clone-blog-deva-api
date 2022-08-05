@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express'
-// import cors from 'cors'
+import cors from 'cors'
 import dotenv from 'dotenv'
 import route from './routes'
 
@@ -17,7 +17,7 @@ app.use(express.json())
 //   'https://www.netlify.com/',
 //   ]
 // }))
-// app.use(cors())
+app.use(cors())
 app.use(route)
 
 // app.use(function (req, res, next) {
