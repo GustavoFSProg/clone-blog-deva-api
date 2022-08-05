@@ -26,7 +26,7 @@ app.use(route)
 //   next()
 // });
 
-// const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['http://localhost:3000'];
 
 // const options: cors.CorsOptions = {
 //   origin: ['https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/']
