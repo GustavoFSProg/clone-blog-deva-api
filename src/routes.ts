@@ -1,11 +1,11 @@
 import { Router } from 'express'
 
 import uploadConfig from './uploadConfig'
-
 import multer from 'multer'
+const upload = multer(uploadConfig)
+
 import postController from './postController'
 
-const upload = multer(uploadConfig)
 
 const route = Router()
 
