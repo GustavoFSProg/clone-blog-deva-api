@@ -10,6 +10,9 @@ const app = express()
 const { PORT } = process.env
 
 app.use(express.json())
+
+// **** O codigo abiaxo setou o cors ****d
+
 // app.use(cors({
 //  origin: [
 //     'https://blog-deva.herokuapp.com/',
@@ -26,7 +29,6 @@ app.use(route)
 //   next()
 // });
 
-const allowedOrigins = ['http://localhost:3000'];
 
 // const options: cors.CorsOptions = {
 //   origin: ['https://blog-clone-deva.netlify.app/', 'https://app.netlify.com/']
