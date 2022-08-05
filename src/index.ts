@@ -14,11 +14,8 @@ app.use(express.json())
 
 // **** O codigo abiaxo setou o cors ****d
 
-
 app.use(route)
-app.use(cors({
-  origin: '*'
-}))
+app.use(cors())
 
 app.get('/', function (req: Request, res: Response) {
   return res.status(200).send({ msg: ` 🍏 Api Running` })
