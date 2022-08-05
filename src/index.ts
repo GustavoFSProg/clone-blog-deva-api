@@ -15,7 +15,7 @@ app.use(express.json())
 // **** O codigo abiaxo setou o cors ****d
 
 app.use(route)
-
+app.use(cors())
 
 
 app.use(function (req, res, next) {
